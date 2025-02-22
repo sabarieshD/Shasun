@@ -219,7 +219,7 @@ export default function CertificateForm() {
     });
 
     try {
-      const response = await fetch('http://localhost:5000/certificate/generate-certificate', {
+      const response = await fetch('https://shasun.vercel.app/certificate/generate-certificate', {
         method: 'POST',
         body: form
       });
