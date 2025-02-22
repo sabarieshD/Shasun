@@ -6,7 +6,7 @@ const app = express();
 
 // ✅ Configure CORS properly
 const corsOptions = {
-    origin: ['https://shasun-frontend.vercel.app'], // Allow frontend domain
+    origin: ['*'], // Allow frontend domain
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization',
 };
