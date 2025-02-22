@@ -6,6 +6,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send('🚀 Server is running successfully on Vercel!');
+});
+
 app.use('/certificate', certificateRoutes);
 
 const PORT = process.env.PORT || 5000;
