@@ -4,7 +4,7 @@ const path = require('path');
 const multer = require('multer');
 
 // Set up Multer for file uploads
-const uploadDir = path.join(__dirname, './certificates');
+const uploadDir = '/tmp/certificates';
 if (!fs.existsSync(uploadDir)) {
     fs.mkdirSync(uploadDir, { recursive: true });
 }
